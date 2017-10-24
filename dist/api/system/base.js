@@ -1,11 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-class Base {
-    constructor(config) {
+var Base = /** @class */ (function () {
+    function Base(config) {
         if (config.type === 'axios') {
             this.currentAxios = config.instance;
             this.apiConfig = config;
         }
     }
-}
+    return Base;
+}());
 exports.Base = Base;
